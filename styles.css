@@ -1,0 +1,235 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Estilo específico para Productos Disponibles */
+#api h2 {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5d4037;
+    padding: 1rem;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #faf604e0;
+}
+
+.navbar .nav-link {
+    color: #7bf707;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.navbar .nav-link:hover {
+    color: orange;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../image/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f9fd05;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Productos Disponibles */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.vino-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vino-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vino-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.vino-item p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.vino-item button {
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vino-item button:hover {
+    background-color: orange;
+}
+
+/* Opiniones */
+#opiniones {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#opiniones h2 {
+    color: #5d4037;
+    margin-bottom: 1rem;
+    grid-column: span 2;
+}
+
+#opiniones blockquote {
+    font-style: italic;
+    color: #333;
+    border-left: 4px solid orange;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrito de Compras */
+#carrito {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+#carrito h2 {
+    color: #5d4037;
+    margin-bottom: 1rem;
+}
+
+.carrito-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.carrito-item img {
+    max-width: 50px;
+    border-radius: 4px;
+}
+
+.carrito-item input {
+    width: 50px;
+    text-align: center;
+}
+
+.carrito-item button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.carrito-item button:hover {
+    background-color: darkred;
+}
+
+/* Contacto */
+#contacto {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+#contacto h2 {
+    color: #5d4037;
+    margin-bottom: 1rem;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contacto label {
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contacto button {
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: orange;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5d4037;
+    color: #fff;
+}
+
+
